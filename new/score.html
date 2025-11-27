@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .cards .card {
+            border: 1px solid;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            font-size: 1rem;
+            background-color: aquamarine;
+        } 
+        .cards .card{
+            background-color: antiquewhite;
+        }
+    /* 1 2 3 */
+        html body h1.blogs-header-add.red#blogs-header{
+            color: yellow;
+        }
+    /* 1 2 2 */
+        body h1.blogs-header-add.red#blogs-header{
+                color: green;
+        }
+
+        h1.blogs-header-add#blogs-header{
+                color: red;
+        }
+
+        /* 1 1 1 */
+        h1.blogs-header-add#blogs-header{ 
+                color: aqua;
+        }
+        
+      
+        /* 1 0 1 */
+        h1#blogs-header{
+            color:black
+        }
+        /* 1 0 0 */
+        #blogs-header{
+            color:aqua
+        }
+        /* 0 1 0 */
+        .blogs-header{
+            color: red;
+        } 
+        /* 0 0 1 */
+        h1{
+            color: blue;
+        }
+        /* 0 1 1 */
+        h1.blogs-header{
+            color: black;
+        }
+        /* 0   0    0
+        id class tag  */
+.instruction-wrapper {
+    position: fixed;        /* stays steady when scrolling */
+    bottom:  20px;              /* distance from top*/
+    left: 50%;              /* goes to middle */
+    transform: translateX(-50%); /* perfect center */
+    z-index: 9999;     /* stays above all content */
+
+}
+
+.instruction-btn {
+    padding: 12px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #4a90e2;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button{
+    text-align: center;
+    font-size: 48px;
+    color: #FF4500;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    animation: popup 2s ease forwards;
+}       
+    </style>
+
+</head>
+
+<body>
+
+    <h1 id="blogs-header" class="blogs-header-add red" >Blogs</h1>
+    <div class="cards">
+        <div class="card">
+            <h2>css</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, vitae! Accusamus laboriosam
+                asperiores soluta nobis laudantium rerum consequuntur, a officiis commodi at architecto recusandae quasi
+                ea esse quibusdam minus ducimus. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat laboriosam similique dolorem autem id laudantium enim harum animi aspernatur inventore delectus voluptate quod quisquam nesciunt atque accusamus, sed minus quas quam? Odit autem ipsum dolore? Tempora, perspiciatis, libero velit quia porro tempore autem provident saepe ipsam quaerat earum aperiam amet.</p>
+        </div>
+        <div class="card">
+            <h2>css</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, vitae! Accusamus laboriosam
+                asperiores soluta nobis laudantium rerum consequuntur, a officiis commodi at architecto recusandae quasi
+                ea esse quibusdam minus ducimus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis accusamus voluptatum ab quo repellendus. Maiores accusamus dolor velit animi, minus accusantium fugit praesentium optio soluta nulla commodi iure doloremque exercitationem enim repellat quaerat est qui assumenda placeat, a blanditiis ea! Esse sint sunt officiis impedit, quos voluptatem officia corrupti voluptate consectetur voluptates voluptas similique, totam in, qui dolorum blanditiis et. Iure vitae blanditiis alias! Earum doloribus perspiciatis officiis iste sapiente dolor numquam nulla aperiam error vel sed omnis illo, quasi nisi deleniti. Porro, sit saepe quisquam corporis cupiditate voluptate, optio ad ipsa distinctio, itaque earum officiis reiciendis ipsum magni provident.</p>
+        </div>
+    </div>
+    <div class="instruction-wrapper">
+    <button class="instruction-btn">Instruction<button>
+</div>
+
+<!-- Your normal page content -->
+<div class="content">
+    <!-- Your website content here -->
+</div>
+</body>
+
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* css reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        * {
+            background-color: rgba(255, 0, 0, 0.1);
+        }
+
+        .track {
+            border: 1px solid red;
+        }
+
+        /* end - css reset */
+
+        body {
+            font-family: "Rubik", sans-serif;
+            color: #444444;
+        }
+
+        .text-dark {
+            color: #0B132A;
+        }
+
+        header nav {
+            justify-content: space-between;
+            margin-top: 1.5rem;
+            display: flex;
+
+        }
+
+        header .logo {
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+        }
+
+        .container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .sidebar {
+            padding: 2rem;
+            position: fixed;
+            background-color: yellow;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            display: none;
+        }
+
+        .sidebar.active {
+            display: block;
+        }
+
+        nav .buttons {
+            flex-direction: column;
+            display: flex;
+        }
+
+        @media (min-width:1024px) {
+            header nav svg {
+                display: none;
+            }
+
+            .sidebar {
+                position: static;
+                display: flex;
+                flex-grow: 1;
+                justify-content: space-between;
+
+            }
+
+            header nav .links {
+                display: flex;
+                gap: 1rem;
+            }
+
+            nav .buttons {
+                display: flex;
+                flex-direction: row;
+                gap: 1rem;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo text-dark">
+                <img src="./Standard Collection 27logo.svg" alt="logo">
+                <a>Lasles VPN</a>
+            </div>
+
+            <svg id="menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+            </svg>
+            <div class="sidebar">
+                <ul class="links">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">features</a></li>
+                    <li><a href="#">blog</a></li>
+                    <li><a href="#">testimonials</a></li>
+                    <li><a href="#">help</a></li>
+                </ul>
+                <div class="buttons">
+                    <a href="#">sign In</a>
+                    <a href="#">sign Up</a>
+                </div>
+            </div>
+
+
+
+        </nav>
+    </header>
+
+    <script>
+        // document.getElementById("menu").
+    </script>
+
+
+</body>
+
+</html>

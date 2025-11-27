@@ -1,0 +1,101 @@
+
+/* ---------- PAGE BACKGROUND ---------- */
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #FFECD2, #FFB6B9); /* warm gradient */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ---------- NAVIGATION MENU ---------- */
+ul:first-of-type {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+ul:first-of-type li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+ul:first-of-type li a button {
+    padding: 12px 25px;
+    background: linear-gradient(135deg, #FF7F50, #FF4500);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    transition: all 0.4s ease;
+    text-transform: uppercase;
+}
+
+ul:first-of-type li a button:hover {
+    background: linear-gradient(135deg, #FF6347, #FF0000);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+ul:first-of-type li a button:active {
+    transform: translateY(-2px) scale(0.98);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* ---------- PAGE HEADING ---------- */
+h2 {
+    text-align: center;
+    font-size: 36px;
+    color: #FF4500;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+    margin: 30px 0 20px 0;
+    animation: popup 1s ease forwards;
+}
+
+/* ---------- POPUP ANIMATION ---------- */
+@keyframes popup {
+    0% { transform: scale(0); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); }
+}
+
+/* ---------- CONTACT LIST ---------- */
+ul:nth-of-type(2) {
+    list-style: none;
+    padding: 0;
+    max-width: 500px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+    padding: 20px;
+}
+
+ul:nth-of-type(2) li {
+    padding: 10px 0;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+ul:nth-of-type(2) li:last-child {
+    border-bottom: none;
+}
+
+/* ---------- OPTIONAL: RESPONSIVE ---------- */
+@media (max-width: 600px) {
+    ul:first-of-type li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    ul:nth-of-type(2) {
+        width: 90%;
+    }
+}
